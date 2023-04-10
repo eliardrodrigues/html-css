@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+* { /* reset global de configuraçoes */
+margin: 0px;
+padding: 0px;
+}
+
+html, body{
+    min-height: 100vh; /*usa tamanho total da tela, view port 100% */
+    background-color: lightgray;
+}
+
+header{ /*cabeçalho*/
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    padding-top: 50px; /* padding-top, espaçamento do topo */
+    font-variant: small-caps; /* deixa as letras maisculas, com as primeiras maiores*/
+}
+
+header p{
+    padding-bottom: 50px; /* espaçamento abaixo do paragrafo*/
+}
+
+header a, footer a { /*configuraçoes do link do header*/
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover { /* efeito de passar o mouse nos links, ficam sublianhados*/
+    text-decoration: underline;
+}
+
+section{ /* configura um espaço de 10% da tela em cima e em baixo, para as sections*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /* cria uma espaço entre as linhas digitadas, duas vezes o tamanho = 2em */
+    padding-left: 30px; /* cria um espaçamento  do canteudo apartir do lado esquerdo da tela */
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section.imagem p {
+    width: 400px; /* cria uma caixa no tamanho de 400 px para o paragrfo */
+    background-color: rgba(0, 0, 0, 0.255);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px; /*padding, altera as medidas dos 4 lados*/
+}
+
